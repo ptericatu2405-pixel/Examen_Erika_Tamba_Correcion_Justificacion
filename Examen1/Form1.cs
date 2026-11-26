@@ -102,7 +102,7 @@ namespace Examen1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //En mi m1_Load te falta completar los 10 productos oficiales, establecer los valores
+            //En mi m1_Load me falta completar los 10 productos oficiales, establecer los valores
             //iniciales de los controles (rbtnMostrador seleccionado, chkPostre y chkServilletas
             //desmarcados), deshabilitar btnAgregar y btnQuitar, limpiar txtProducto y corregir el
             //mensaje de lblEstado para que muestre "Estado: Seleccione un producto."
