@@ -14,4 +14,4 @@ y (c) listado de los eventos implementados y reglas de negocio.
 • SelectedIndexChanged: Pasa el producto elegido del catálogo a txtProducto o habilita btnQuitar en el pedido.
 • Validating y TextChanged: Validan en tiempo real que txtCantidad sea un entero >= 1 para habilitar btnAgregar y evitar errores.
 • CheckedChanged: Actualiza el total al instante al marcar o desmarcar entrega en aula (+$0.50), postre (+$1.00) o servilletas.
-• Click: Agrega ítems validados al carrito (btnAgregar), elimina filas elegidas (btnQuitar) o reinicia todo (btnLimpiar).
+• Click: Agrega ítems validados al carrito (btnAgregar), elimina filas elegidas (btnQuitar) o reinicia todo (btnLimpiar).imagenes complementarias 
