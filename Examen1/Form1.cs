@@ -246,7 +246,8 @@ namespace Examen1
             }
         }
 
-        //validación de cliente, validación de producto seleccionado, validación de cantidad,
+        //validación de cliente que si se tenia opero no se complementaba muy bien la idea , 
+        validación de producto seleccionado, validación de cantidad,
         //cálculo de subtotal, agregado a lvPedido, actualización del total
         //mediante ActualizarTotal() y mensaje de confirmación al usuario.
         private void btnAgregar_Click(object sender, EventArgs e)
@@ -280,7 +281,7 @@ namespace Examen1
                 return;
             }
 
-            // si se se teni el  Calculo  del subtotal del producto
+            // si se se tenia el  Calculo  del subtotal del producto
             decimal subtotal = cantidad * precioActual;
 
             // Crea un nuevo elemento para el pedido
@@ -288,23 +289,23 @@ namespace Examen1
             item.SubItems.Add(cantidad.ToString());
             item.SubItems.Add(subtotal.ToString("$0.00", CultureInfo.InvariantCulture));
 
-            // Guarda el subtotal para los cálculos posteriores
+            // Guardar el subtotal para los cálculos posteriores
             item.Tag = subtotal;
 
-            // Agrega el producto a la lista de pedidos
+            // Agregar el producto a la lista de pedidos
             lvPedido.Items.Add(item);
 
-            // chat corrigio: Evita que la selección del pedido habilite quitar automáticamente.
+            // Evitar que la selección del pedido habilite quitar automáticamente.
             lvPedido.SelectedItems.Clear();
             btnQuitar.Enabled = false;
 
-            // Actualiza el total general
+            // Actualizar el total general
             ActualizarTotal();
 
-            // Reinicia la cantidad a 1
+            // Reiniciar la cantidad a 1
             txtCantidad.Text = "1";
 
-            // Informa que el producto fue agregado
+            // Informar que el producto fue agregado
             lblEstado.Text = "Producto agregado correctamente.";
         }
 
@@ -319,7 +320,7 @@ namespace Examen1
                 // Recalcula el total
                 ActualizarTotal();
 
-                // chat corrigio: Deshabilita Quitar después de eliminar el producto.
+                //  Deshabilita Quitar después de eliminar el producto.
                 btnQuitar.Enabled = false;
 
                 // Actualiza el estado
