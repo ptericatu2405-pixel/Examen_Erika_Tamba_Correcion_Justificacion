@@ -115,7 +115,7 @@ namespace Examen1
             lvCatalogo.Columns.Add("Producto", 180);
             lvCatalogo.Columns.Add("Precio", 80);
 
-            // chat corrigio: Evita que se repitan los productos si Load se ejecuta nuevamente.
+            // Evita que se repitan los productos si Load se ejecuta nuevamente.
             lvCatalogo.Items.Clear();
 
             // FALTA: Reemplazar por los 10 productos oficiales del examen
